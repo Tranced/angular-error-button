@@ -14,5 +14,7 @@ export class ClickMeComponent {
             //Send an error to sentry on click
             Sentry.captureException(e);
         }
+        //Send Angular specific errors to sentry
+        return undefinedReference.error;
     }
 }

@@ -26,7 +26,7 @@ export class SentryErrorHandler implements ErrorHandler {
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [{ provide: ErrorHandler, useClass: SentryErrorHandler }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
