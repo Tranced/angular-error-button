@@ -18,8 +18,6 @@ export class SentryErrorHandler implements ErrorHandler {
   }
 }
 
-
-
 @NgModule({
   declarations: [
     AppComponent,

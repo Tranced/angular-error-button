@@ -8,10 +8,10 @@ import * as Sentry from "@sentry/browser";
 export class ClickMeComponent {
     constructor() { }
     onClickError() {
-        //Send an error to sentry on click!
         try {
             throw new Error("you clicked a button!");
         } catch (e) {
+            //Send an error to sentry on click
             Sentry.captureException(e);
         }
     }
